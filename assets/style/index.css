@@ -1,0 +1,30 @@
+
+a.nav-link {
+    font-weight: 600;
+}
+
+button#buttonBuy {
+    display: none;
+    width: 100%;
+    text-align: center;
+    height: 6vh;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #2A3342;
+    color: white;
+    border: 1px solid #2A3342;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .5px;
+    transition: 500ms;
+}
+
+button#buttonBuy:hover {
+    transition: 500ms;
+    transform: translate(5px, 5px);
+}
+
+article.card:hover button#buttonBuy {
+    display: block;
+    transition: 500ms;
+}
