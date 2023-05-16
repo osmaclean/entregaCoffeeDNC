@@ -8,8 +8,14 @@
   <title>DNC Coffee</title>
   <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="assets/style/index.css">
+  <link rel="stylesheet" href="assets/style/modal.css">
   <script src="assets/js/index.js" defer></script>
 </head>
 
@@ -29,7 +35,7 @@
             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#sobre">Sobre</a>
           </li>
           <li class="nav-item ps-3">
-            <a class="nav-link" href="#">Atendimento</a>
+            <a class="nav-link button_sac" href="#" data-modal-sac="sac">Atendimento</a>
           </li>
         </ul>
       </div>
@@ -76,6 +82,23 @@
         <button id="buttonBuy">Comprar Agora</button>
       </div>
     </article>
+
+
+    <!--Modal-->
+    <div class="modal-wrapper" id="sac">
+      <div class="modalFunc">
+        <div class="modal-header">
+          <button class="modal-close" data-modal-sac="sac">X</button>
+        </div>
+        <div class="modal-body inputs-modal">
+          <h3 class="modal-title">Atendimento</h3>
+          <span>Rua José de Alencar, 111, Centro
+            CEP: 12209-000 | +55 (11) 3333-8000
+          </span>
+          <button id="button-reset">Entrar em Contato</button>
+        </div>
+      </div>
+    </div>
   </main>
 
   <div class="modal fade" id="sobre" tabindex="-1">
